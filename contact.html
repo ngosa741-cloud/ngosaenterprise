@@ -2,38 +2,332 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>NgosaEnterprise - Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Ngosa Enterprise - Get in touch with our professional team">
+  <title>Contact Us | Ngosa Enterprise</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="NgosaEnterprise Logo" class="logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo-section">
+        <img src="images/logo.png" alt="Ngosa Enterprise Logo" class="logo">
+        <span class="brand-name">Ngosa Enterprise</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <section class="content">
-    <h2>Contact Us</h2>
-    <p><strong>Phone:</strong> 0977792049</p>
-    <p><strong>Email:</strong> ngosa7812@gmail.com</p>
-    <p><strong>Facebook:</strong> Ngosa TheEnterpriser</p>
+  <!-- Main Content -->
+  <main class="page-content">
+    <div class="container">
+      <!-- Page Header -->
+      <section class="page-header">
+        <h1>Contact Us</h1>
+        <p class="page-subtitle">Let's Discuss How We Can Support Your Organization</p>
+      </section>
 
-    <form>
-      <label for="name">Your Name:</label><br>
-      <input type="text" id="name" name="name"><br><br>
+      <!-- Contact Information & Form -->
+      <section class="contact-section">
+        <div class="contact-grid">
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <div class="info-item">
+              <div class="info-icon">📧</div>
+              <div class="info-content">
+                <h4>Email Address</h4>
+                <p><a href="mailto:ngosa7812@gmail.com">ngosa7812@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">📱</div>
+              <div class="info-content">
+                <h4>Phone Number</h4>
+                <p><a href="tel:+260977792049">+260 977 792 049</a></p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">🌐</div>
+              <div class="info-content">
+                <h4>Social Media</h4>
+                <p><a href="https://facebook.com/ngosa.theenterpriser" target="_blank">Facebook: Ngosa TheEnterpriser</a></p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">⏰</div>
+              <div class="info-content">
+                <h4>Response Time</h4>
+                <p>We typically respond to inquiries within 24 hours during business days.</p>
+              </div>
+            </div>
+          </div>
 
-      <label for="email">Your Email:</label><br>
-      <input type="email" id="email" name="email"><br><br>
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <form class="contact-form" action="#" method="POST">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required class="form-control">
+              </div>
 
-      <label for="message">Your Message:</label><br>
-      <textarea id="message" name="message"></textarea><br><br>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required class="form-control">
+              </div>
 
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </section>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="organization">Organization</label>
+                <input type="text" id="organization" name="organization" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <select id="subject" name="subject" required class="form-control">
+                  <option value="">Select a subject</option>
+                  <option value="software-development">Custom Software Development</option>
+                  <option value="consulting">Technology Consulting</option>
+                  <option value="data-analytics">Data Analytics & BI</option>
+                  <option value="integration">Systems Integration</option>
+                  <option value="training">Training & Capacity Building</option>
+                  <option value="other">Other Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="6" required class="form-control" placeholder="Please provide details about your inquiry..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h4>What is your typical project timeline?</h4>
+            <p>Project timelines vary based on scope and complexity. After an initial consultation, we provide detailed project schedules with milestones and delivery dates.</p>
+          </div>
+          <div class="faq-item">
+            <h4>Do you offer maintenance and support after project completion?</h4>
+            <p>Yes, we provide comprehensive ongoing support and maintenance packages to ensure optimal performance of your solutions.</p>
+          </div>
+          <div class="faq-item">
+            <h4>How do you ensure data security?</h4>
+            <p>We implement industry-standard security practices, including encryption, access controls, and regular security audits throughout development and deployment.</p>
+          </div>
+          <div class="faq-item">
+            <h4>Can you work with existing systems?</h4>
+            <p>Absolutely. We specialize in integrating new solutions with existing systems and can adapt to your current technology infrastructure.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Ngosa Enterprise</h4>
+        <p>Delivering professional technology solutions grounded in academic excellence.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Information</h4>
+        <p>Email: ngosa7812@gmail.com</p>
+        <p>Phone: +260 977 792 049</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Ngosa Enterprise. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <style>
+    .page-content {
+      padding: 60px 20px;
+      min-height: calc(100vh - 200px);
+    }
+
+    .page-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .page-header h1 {
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .page-subtitle {
+      font-size: 1.2rem;
+      color: var(--secondary-color);
+      font-weight: 500;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      margin-bottom: 80px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    .contact-info h2 {
+      color: var(--primary-color);
+      margin-bottom: 2rem;
+    }
+
+    .info-item {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .info-icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+
+    .info-content h4 {
+      color: var(--primary-color);
+      margin-bottom: 0.3rem;
+    }
+
+    .info-content p {
+      color: #666;
+    }
+
+    .info-content a {
+      color: var(--secondary-color);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .info-content a:hover {
+      color: var(--accent-color);
+    }
+
+    /* Contact Form */
+    .contact-form-wrapper {
+      background: white;
+      padding: 2.5rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
+      font-family: inherit;
+      font-size: 1rem;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--secondary-color);
+      box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      background-color: var(--light-bg);
+      padding: 60px 20px;
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+
+    .faq-section h2 {
+      color: var(--primary-color);
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .faq-item {
+      background: white;
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      border-left: 4px solid var(--secondary-color);
+    }
+
+    .faq-item h4 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .faq-item p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .contact-form-wrapper {
+        order: -1;
+      }
+
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </body>
 </html>
